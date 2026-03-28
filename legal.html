@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#060606">
+    <title>Legal & Compliance — AJ1 Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-hero {
+            padding: 160px 8% 80px;
+            border-bottom: 1px solid var(--border);
+        }
+        .legal-hero .eyebrow { animation: none; opacity: 1; margin-bottom: 20px; }
+        .legal-hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 7vw, 6rem);
+            line-height: 0.92;
+            letter-spacing: 2px;
+            color: var(--off-white);
+        }
+        .legal-hero h1 span { color: var(--red); }
+        .legal-meta {
+            margin-top: 24px;
+            font-size: 0.55rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(232,228,223,0.25);
+            font-weight: 300;
+        }
+
+        .legal-body {
+            padding: 80px 8% 120px;
+            max-width: 860px;
+        }
+        .legal-section { margin-bottom: 64px; }
+        .legal-section-num {
+            font-size: 0.48rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--red);
+            font-weight: 400;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .legal-section h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            color: var(--off-white);
+            margin-bottom: 20px;
+        }
+        .legal-section p {
+            font-size: 0.82rem;
+            line-height: 1.95;
+            color: rgba(232,228,223,0.42);
+            font-weight: 300;
+            margin-bottom: 12px;
+        }
+        .legal-section p strong { color: var(--off-white); font-weight: 400; }
+        .legal-section p a {
+            color: var(--red);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(200,16,46,0.3);
+            transition: border-color 0.3s;
+        }
+        .legal-section p a:hover { border-color: var(--red); }
+        .legal-divider {
+            width: 40px;
+            height: 1px;
+            background: rgba(200,16,46,0.4);
+            margin-bottom: 64px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.58rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(232,228,223,0.32);
+            text-decoration: none;
+            font-weight: 300;
+            border-bottom: 1px solid rgba(232,228,223,0.1);
+            padding-bottom: 2px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .back-link:hover { color: var(--off-white); border-color: rgba(232,228,223,0.4); }
+
+        /* Legal page responsive overrides */
+        @media (max-width: 768px) {
+            .legal-hero { padding: 120px 5% 60px; }
+            .legal-body { padding: 60px 5% 80px; }
+        }
+        @media (max-width: 480px) {
+            .legal-hero { padding: 100px 5% 48px; }
+            .legal-body { padding: 48px 5% 64px; }
+            .legal-section { margin-bottom: 48px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#zero-day">Zero Day</a></li>
+            <li><a href="index.html#marketing">The Marketing</a></li>
+            <li><a href="index.html#chicago">The Chicago</a></li>
+            <li><a href="index.html#dna">DNA</a></li>
+            <li><a href="index.html#legacy">Legacy</a></li>
+        </ul>
+        <div class="mobile-menu-badge">NBA Banned</div>
+    </div>
+
+    <nav>
+        <div class="nav-logo">Nike Air</div>
+        <ul class="nav-links">
+            <li><a href="index.html#zero-day">Zero Day</a></li>
+            <li><a href="index.html#marketing">The Marketing</a></li>
+            <li><a href="index.html#chicago">The Chicago</a></li>
+            <li><a href="index.html#dna">DNA</a></li>
+            <li><a href="index.html#legacy">Legacy</a></li>
+        </ul>
+        <div class="nav-badge">NBA BANNED</div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="legal-hero">
+        <div class="eyebrow">
+            <div class="eyebrow-line"></div>
+            <span class="eyebrow-text">Project Compliance</span>
+        </div>
+        <h1>Legal &amp;<br><span>Framework.</span></h1>
+        <p class="legal-meta">Anthony Ballestra &nbsp;·&nbsp; 3rd-Year Information Technology &nbsp;·&nbsp; Academic Case Study</p>
+    </div>
+
+    <div class="legal-body">
+
+        <div class="legal-section">
+            <span class="legal-section-num">Section I</span>
+            <h2>Purpose and Scope of Project</h2>
+            <p>This digital archive is a <strong>non-commercial, academic case study</strong> developed by Anthony Ballestra, a 3rd-year Information Technology student. The project serves as a technical demonstration of modern frontend development, UI/UX design, and the integration of Generative AI in asset production.</p>
+            <p>This platform is strictly for <strong>educational and portfolio demonstration purposes</strong> and is not intended for commercial trade, retail, or the sale of any products or services.</p>
+        </div>
+
+        <div class="legal-divider"></div>
+
+        <div class="legal-section">
+            <span class="legal-section-num">Section II</span>
+            <h2>Intellectual Property &amp; Trademark Attribution</h2>
+            <p>All trademarks, service marks, trade names, and trade dress — including but not limited to <strong>"Nike," "Nike Air," the "Swoosh" design, and the "Wings" logo</strong> — are the exclusive property of Nike, Inc. and its subsidiaries.</p>
+            <p>The use of these assets within this project is intended to provide historical context for a specific cultural case study. This project is <strong>not affiliated with, authorized by, endorsed by, or in any way officially connected</strong> to Nike, Inc., or any of its affiliates.</p>
+        </div>
+
+        <div class="legal-divider"></div>
+
+        <div class="legal-section">
+            <span class="legal-section-num">Section III</span>
+            <h2>Fair Use &amp; Digital Ethics Statement</h2>
+            <p>The content provided on this site is used under the <strong>Fair Use doctrine of the Philippine Intellectual Property Code (RA 8293)</strong> and international copyright standards.</p>
+            <p>This project utilizes protected brand identifiers for the purposes of <strong>educational commentary, historical documentation, and technical research</strong> — all recognized fair use categories under applicable law.</p>
+        </div>
+
+        <div class="legal-divider"></div>
+
+        <div class="legal-section">
+            <span class="legal-section-num">Section IV</span>
+            <h2>Generative AI &amp; Asset Integrity</h2>
+            <p>In adherence to modern digital ethics, <strong>no original, copyrighted Nike-owned photography or studio assets</strong> were extracted or utilized in the production of this site.</p>
+            <p>All visual media, including the <strong>"1985 Cinematic Backgrounds,"</strong> were artificially generated (AI) to recreate a historical aesthetic without infringing upon the proprietary creative works of human photographers or marketing agencies.</p>
+        </div>
+
+        <div class="legal-divider"></div>
+
+        <div class="legal-section">
+            <span class="legal-section-num">Section V</span>
+            <h2>Liability Limitation</h2>
+            <p>The developer assumes no responsibility for any perceived affiliation or confusion regarding the official Nike brand. For official information, products, or services, users are directed to the official Nike website at <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer">www.nike.com</a>.</p>
+        </div>
+
+        <a href="index.html" class="back-link">&larr; Back to Archive</a>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Nike Air</div>
+            <p class="footer-tagline">Just Do It.</p>
+            <p class="footer-copy">© 2025 Nike, Inc. All rights reserved. &nbsp;·&nbsp; Site images are AI-generated and copyright-free. &nbsp;·&nbsp; <a href="legal.html" style="color:inherit;opacity:0.5;text-decoration:none;border-bottom:1px solid rgba(232,228,223,0.15);">Legal &amp; Compliance</a></p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
